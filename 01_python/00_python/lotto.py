@@ -14,12 +14,12 @@ print(lotto)
 answer = []
 for num in range(1,7):
     answer.append(lotto[f'drwtNo{num}'])
-print(answer)
+print(sorted(answer))
 
 #랜덤으로 로또번호 생성하기 
 num_list = [i for i in range(1,46)]
 random_num = random.sample(num_list,6)
-print(random_num)
+print(sorted(random_num))
 
 
 #당첨번호와 랜덤번호 일치하는 정도에 따른 등수 표기하기 
@@ -28,3 +28,11 @@ for i in answer:
     if i in random_num:
         count+=1
 print(count)
+
+
+
+while count=3:
+    for i in answer:
+        if i in random_num:
+            count+=1
+
